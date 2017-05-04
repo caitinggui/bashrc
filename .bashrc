@@ -66,6 +66,25 @@ alias l='ls -CF'
 alias lsd="ls | grep '^[dl]'"
 alias lsf="ls -a | grep '^-'"
 
+# For hdfs
+alias hls='hdfs dfs -ls -h'
+alias hcat='hdfs dfs -cat'
+alias hmkdir='hdfs dfs -mkdir'
+alias hrm='hdfs dfs -rm'
+alias hrmdir='hdfs dfs -rmdir'
+alias hmv='hdfs dfs -mv'
+alias hput='hdfs dfs -put'
+alias hget='hdfs dfs -get'
+alias hfind='hdfs dfs -find'
+alias hdu='hdfs dfs -du'
+alias hdf='hdfs dfs -df'
+alias hcp='hdfs dfs -cp'
+alias hcount='hdfs dfs -count'
+alias hchown='hdfs dfs -chown'
+alias hchgrp='hdfs dfs -chgrp'
+alias hchmod='hdfs dfs -chmod'
+alias htail='hdfs dfs -tail'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
