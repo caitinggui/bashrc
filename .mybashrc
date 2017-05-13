@@ -1,1 +1,3 @@
+alias runserver='python manage.py runserver 0.0.0.0:1111'
+
 export CDH=/opt/cloudera/parcels/CDH
