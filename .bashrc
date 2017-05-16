@@ -85,6 +85,10 @@ alias hchgrp='hdfs dfs -chgrp'
 alias hchmod='hdfs dfs -chmod'
 alias htail='hdfs dfs -tail'
 
+# Show cpu/mem situation by order
+alias cpu='ps aux|head -1;ps aux|grep -v PID|sort -rn -k +3|head'
+alias mem='ps aux|head -1;ps aux|grep -v PID|sort -rn -k +4|head'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
