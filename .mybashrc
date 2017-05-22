@@ -1,3 +1,4 @@
 alias runserver='python manage.py runserver 0.0.0.0:1111'
+alias updatetime='sudo ntpdate us.pool.ntp.org'
 
 export CDH=/opt/cloudera/parcels/CDH
