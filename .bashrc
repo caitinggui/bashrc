@@ -97,3 +97,5 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.mybashrc ]; then
 	. ~/.mybashrc
 fi
+
+eval $(thefuck --alias)
