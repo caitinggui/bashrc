@@ -56,8 +56,9 @@ esac
 alias h='history'
 alias j='jobs -l'
 alias ..='cd ..'
-alias du='du -h'
+alias du='du -h -d 1'
 alias df='df -h'
+alias free='free -h'
 
 alias ls='ls -lh --color=auto'
 alias ll='ls -alF'
