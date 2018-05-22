@@ -89,6 +89,10 @@ alias htail='hdfs dfs -tail'
 # Show cpu/mem situation by order
 alias cpu='ps aux|head -1;ps aux|grep -v PID|sort -rn -k +3|head'
 alias mem='ps aux|head -1;ps aux|grep -v PID|sort -rn -k +4|head'
+# show system statics
+alias dstats="dstat -am --tcp --fs -t"
+alias dstatall="dstat -am --tcp --fs --top-cpu --top-mem --top-io -t"
+alias dstatadv="dstat --top-cpu-adv --top-io-adv --top-mem -n -t"
 alias top='top c'
 
 # Add an "alert" alias for long running commands.  Use like so:
